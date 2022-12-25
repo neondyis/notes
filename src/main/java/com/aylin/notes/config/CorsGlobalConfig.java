@@ -8,7 +8,7 @@ public class CorsGlobalConfig implements WebFluxConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry corsRegistry) {
         corsRegistry.addMapping("/**")
-                .allowedOrigins("http://localhost:3000")
+                .allowedOrigins("http://localhost:3000", "https://note-front-gamma.vercel.app")
                 .allowedMethods("*")
                 .maxAge(3600);
     }
