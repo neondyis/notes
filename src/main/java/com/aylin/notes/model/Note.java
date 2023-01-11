@@ -21,6 +21,8 @@ public class Note {
 
     public String fontColour;
 
+    public String type;
+
     @CreatedDate
     public LocalDateTime created;
 }
